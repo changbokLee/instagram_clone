@@ -18,4 +18,6 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('apis/', include('apis.urls')),
+    path('',HomeView.as_view, name= 'contents_home')
 ]
